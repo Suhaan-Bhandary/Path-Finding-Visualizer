@@ -377,7 +377,7 @@ export default class PathfindingVisualizer extends Component {
                           <Node
                             row={rowIndex}
                             col={nodeIndex}
-                            key={nodeIndex}
+                            key={rowIndex + "-" + nodeIndex}
                             isStart={isStart}
                             isFinish={isFinish}
                             isWall={isWall}

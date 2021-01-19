@@ -7,6 +7,7 @@ export default class Node extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
     const {
       row,
