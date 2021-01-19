@@ -360,7 +360,7 @@ export default class PathfindingVisualizer extends Component {
 
           <p>
             Dijkstra's Algorithm is weighted and guarantees the shortest path!{" "}
-            <span class="ref"></span>
+            <span className="ref"></span>
           </p>
         </div>
 
