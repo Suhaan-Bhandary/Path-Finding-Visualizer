@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+
 import Node from "./Node/Node.jsx";
+import {showPopUp} from "./Tutorial/Tutorial.jsx";
 
 import { dijkstra, getNodesInShortestPathOrder } from "../algorithms/dijkstra";
 
@@ -351,7 +353,7 @@ export default class PathfindingVisualizer extends Component {
       <div className="pathfindingVisualizer">
         <div className="container">
           <div className="heading">
-            <h2>Search Visualizer</h2>
+            <h2 onClick={showPopUp}>Search Visualizer</h2>
             <h2>{topMessage}</h2>
           </div>
 
