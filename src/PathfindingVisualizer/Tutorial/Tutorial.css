@@ -105,4 +105,25 @@
     cursor: pointer;
 }
 
+@media(max-width:780px) {
+    .PopUp {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 200%;
+        height: 200vh;
+    }
+    .PopUp .PopUpTextBox {
+        width: 100%;
+        border: none;
+    }
+    .player img, .player div {
+        width: 60px;
+        height: 35px;
+    }
+    .PopUp .PopUpTextBox header {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
 
