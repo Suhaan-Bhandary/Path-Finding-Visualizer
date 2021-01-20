@@ -64,7 +64,7 @@ export class Tutorial extends Component {
 
         <div className="skipBox">
           <small>*You can view this anytime by clicking on <span>[Search Visualizer]</span></small>
-          <button onClick={skipPopUp}>Skip</button>
+          <button onClick={skipPopUp}>Done !</button>
         </div>
 
         

@@ -9,12 +9,12 @@
     top: 25vh;
     left: 20%;
     position: absolute;
-    width: 100%;
+    width: 75%;
     height: 70vh;
 }
 
 .PopUp .PopUpTextBox {
-    width: 60%;
+    width: 80%;
     height: 50vh;
     background-color: white;
     z-index: 10;
