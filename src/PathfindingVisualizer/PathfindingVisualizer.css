@@ -1,164 +1,197 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-
-.pathfindingVisualizer {
-  max-width: 100%;
-  min-width: 100%;
-}
-
-.pathfindingVisualizer .container {
-  max-width: 100%;
-  min-width: 100%;
-  padding: auto;
-
-  background-color: #34495e;
-
-  color: #fff;
-}
-
-.pathfindingVisualizer .container .heading {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 5px 10px 10px 10px;
-  text-align: center;
-}
-
-.pathfindingVisualizer .container .heading h2{
-  cursor: pointer;
-}
-
-.textBox {
-  display: flex;
-  padding: 10px;
-
-  display: flex;
-  justify-content: space-around;
-
-  line-height: 20px;
-}
-
-.textBox .weightContainer input {
-  text-align: center;
-  color: #fff;
-  background-color: transparent;
-  height: 20px;
-}
-
-.textBox .weightContainer button {
-  margin-left: 6px;
-  width: 60px;
-  position: relative;
-  color: #fff;
-  padding: 5px 10px;
-  font-size: 12px;
-  font-weight: 500;
-
-  background-color: #48c9b0;
-  border-color: #48c9b0;
-
-  border-radius: 5px;
-}
-
-.textBox .weightContainer button:hover {
-  color: #000;
-}
-
-.textBox .startPointContainer {
-  font-weight: 500;
-}
-.textBox .startPointContainer input {
-  color: #fff;
-  background-color: transparent;
-  height: 20px;
-  width: 40px;
-  padding: 0px 10px;
-  margin: 0px 5px 0px 5px;
-}
-
-.textBox .endPointContainer {
-  font-weight: 500;
-}
-.textBox .endPointContainer input {
-  color: #fff;
-  background-color: transparent;
-  height: 20px;
-  width: 40px;
-  padding: 0px 10px;
-  margin: 0px 5px 0px 5px;
-}
-
-.container p {
-    padding: 8px 10px 5px 10px;
-  }
-
-.buttonContainer {
-  margin-left: 6px;
-
-  padding: 5px 10px 5px 10px;
-
-  position: relative;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-
-  background-color: #48c9b0;
-  border-color: #48c9b0;
-
-  border-radius: 5px;
-  cursor: pointer;
-
-  transition-duration: 0.8s;
-}
-.buttonContainer:hover{
-    background-color: #87dfcc;
-}
-
-.btn:hover{
-    color: #111;
-}
-
-.buttonContainer p{
+*
+{
+    margin: 0;
     padding: 0;
 }
 
-.visualGridContainer .gridBox{
-    border: 2px solid black;
+
+.pathfindingVisualizer
+{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.pathfindingVisualizer .container
+{
+    min-width: 100%;
+    max-width: 100%;
+    padding: auto;
+
+    color: #fff;
+    background-color: #34495e;
+}
+
+.pathfindingVisualizer .container .heading
+{
+    display: flex;
+
+    padding: 5px 10px 10px 10px;
+
+    text-align: center;
+
+    justify-content: space-between;
+}
+
+.pathfindingVisualizer .container .heading h2
+{
+    cursor: pointer;
+}
+
+.textBox
+{
+    line-height: 20px;
+
+    display: flex;
+    display: flex;
+
+    padding: 10px;
+
+    justify-content: space-around;
+}
+
+.textBox .weightContainer input
+{
+    height: 20px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: transparent;
+}
+
+.textBox .weightContainer button
+{
+    font-size: 12px;
+    font-weight: 500;
+
+    position: relative;
+
+    width: 60px;
+    margin-left: 6px;
+    padding: 5px 10px;
+
+    color: #fff;
+    border-color: #48c9b0;
+    border-radius: 5px;
+    background-color: #48c9b0;
+}
+
+.textBox .weightContainer button:hover
+{
+    color: #000;
+}
+
+.textBox .startPointContainer
+{
+    font-weight: 500;
+}
+.textBox .startPointContainer input
+{
+    width: 40px;
+    height: 20px;
+    margin: 0 5px 0 5px;
+    padding: 0 10px;
+
+    color: #fff;
+    background-color: transparent;
+}
+
+.textBox .endPointContainer
+{
+    font-weight: 500;
+}
+.textBox .endPointContainer input
+{
+    width: 40px;
+    height: 20px;
+    margin: 0 5px 0 5px;
+    padding: 0 10px;
+
+    color: #fff;
+    background-color: transparent;
+}
+
+.container p
+{
+    padding: 8px 10px 5px 10px;
+}
+
+.buttonContainer
+{
+    font-size: 12px;
+    font-weight: 500;
+
+    position: relative;
+
+    margin-left: 6px;
+    padding: 5px 10px 5px 10px;
+
+    cursor: pointer;
+    transition-duration: .8s;
+
+    color: #fff;
+    border-color: #48c9b0;
+    border-radius: 5px;
+    background-color: #48c9b0;
+}
+.buttonContainer:hover
+{
+    background-color: #87dfcc;
+}
+
+.btn:hover
+{
+    color: #111;
+}
+
+.buttonContainer p
+{
+    padding: 0;
+}
+
+.visualGridContainer .gridBox
+{
     min-width: 80%;
     max-width: 80%;
     margin: 5px auto;
+
+    border: 2px solid black;
 }
 
 /* Responsiveness */
 
-@media(max-width:780px) {
-    body{
-        background-color:#34495e;
+@media(max-width:780px)
+{
+    body
+    {
+        background-color: #34495e;
     }
-    .visualGridContainer .gridBox{
-        background-color:#fff;
-        border: 2px solid black;
+    .visualGridContainer .gridBox
+    {
         min-width: 200%;
         max-width: 200%;
         margin: 5px auto;
+
+        border: 2px solid black;
+        background-color: #fff;
     }
 
-    .pathfindingVisualizer .container {
-        max-width: 200%;
+    .pathfindingVisualizer .container
+    {
         min-width: 200%;
+        max-width: 200%;
         padding: auto;
-      
-        background-color: #34495e;
-      
-        color: #fff;
-      }
 
-      .ref::before {
-        font-weight: bold;
         color: #fff;
-        content: "(View on Lanscape Mode) ";
-      }
+        background-color: #34495e;
+    }
+
+    .ref::before
+    {
+        font-weight: bold;
+
+        content: '(View on Lanscape Mode) ';
+
+        color: #fff;
+    }
 }
