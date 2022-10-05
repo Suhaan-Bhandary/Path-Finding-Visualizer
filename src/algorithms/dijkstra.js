@@ -41,10 +41,12 @@ function sortNodesByDistance(unvisitedNodes) {
 function updateUnvisitedNeighbors(node, grid) {
   const unvisitedNeighbors = getUnvisitedNeighbors(node, grid);
   for (const neighbor of unvisitedNeighbors) {
-    
-    neighbor.distance = node.distance + neighbor.weight + 1; 
-    // Now the neighbor distance is not infinity and because of it it will show among the top in unvisited nodes.
-    neighbor.previousNode = node; // With this property we can backtrack and find the shortest path between the start and end node.
+    if (neighbor.distance > node.distance + neighbor.weight + 1) {
+      neighbor.distance = node.distance + neighbor.weight + 1;
+      
+      // Now the neighbor distance is not infinity and because of it it will show among the top in unvisited nodes.
+      neighbor.previousNode = node; // With this property we can backtrack and find the shortest path between the start and end node.
+    }
   }
 }
 
