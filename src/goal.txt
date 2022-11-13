@@ -1,3 +1,0 @@
-<!-- Today we are going to deploy our react app with the help of hitesh Choudary -->
-
-We are going to use netlify to host our application and also using buddy to carry development.
